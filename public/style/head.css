@@ -1,0 +1,93 @@
+#head{
+    background: #181818;
+    height: 70px;
+}
+.main-logo,.wareName,.nav,.nav li,.search,.search input,.search a,.headRight,.headRight span{
+    float: left;
+}
+.main-logo{
+    width: 50px;
+    height:60px;
+    margin:5px 0 0 40px;
+}
+.wareName{
+    display: block;
+    width: 200px;
+    height:70px;
+}
+.nav{
+    width: 500px;
+    height: 70px;
+}
+.nav li{
+    width: 140px;
+    height:40px;
+    margin: 15px 0 0 10px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+}
+.nav li:hover{
+    color: #feca2e;
+}
+.search{
+    width: 300px;
+    height: 70px;
+}
+.search input{
+    width: 220px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    outline: none;
+    text-indent: 5px;
+    background: #555;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+.search a{
+    width: 40px;
+    height: 30px;
+    margin-top:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    background: #555;
+}
+.search a img{
+    width: 25px;
+    height:25px;
+    display: block;
+    margin: 3px auto 5px;
+}
+.headRight{
+    width:120px;
+    height: 70px;
+    float:right;
+}
+.headRight span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin:10px 0 0 0;
+
+}
+.headRight span img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+}
+.headRight .logIn{
+    line-height: 50px;
+    text-align: center;
+    font-size: 17px;
+    cursor:pointer;
+    color: #fff;
+}
+.headRight .logIn:hover{
+    color: #feca2e;
+}
