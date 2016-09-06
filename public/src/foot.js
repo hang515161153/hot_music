@@ -1,17 +1,21 @@
 const Foot = React.createClass({
-  render:function(){
-    return (<div className="footer">
-
-            <div className="span12">
-              <p className="text-center">
-                <em>Git</em>是一个分布式的版本控制系统，最初由<strong>Linus Torvalds</strong>编写，用作Linux内核代码的管理。在推出后，。
-              </p>
-              <p className="text-center">
-                <em>Git</em>是一个分布式的版本控制系统，最初由<strong>Linus Torvalds</strong>推出后，Git在其它项目中也取得了很大成功，尤其是在Ruby社区中。
-              </p>
-            </div>
+  render: function () {
+    return (
+      <div className="footer">
+        <div className="foot_left">
+          <div className="logo_img">logooooooooooooo</div>
+          <div className="foot_content">Copyright © 2015 浪之音 All rights reserved.</div>
         </div>
+        <div className="foot_right">
+          <div className="foot_title">关注我们</div>
+          <ul className="foot_right_ul">
+            <li>新浪微博: <a href="">@麻爷豆腐乳</a> </li>
+            <li>交流 QQ: 515161153</li>
+            <li>官方微信: hang515161153</li>
+          </ul>
+        </div>
+      </div>
     );
   }
 });
-ReactDOM.render(<Foot />,document.getElementById('Foot'));
+ReactDOM.render(<Foot />, document.getElementById('Foot'));

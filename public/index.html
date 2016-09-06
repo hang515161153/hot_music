@@ -3,95 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>浪音</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        #h2{
-            color: #fff;
-        }
-        .container-fluid {
-            height: 520px;
-            background: #555;
-        }
-
-        .carousel {
-            width: 1120px;
-            margin: auto;
-        }
-        .carousel-inner{
-            margin-top: 20px;
-        }
-
-        /*.left{*/
-        /*margin-left: -100px;*/
-        /*}*/
-        /*.right{*/
-        /*margin-right: -100px;*/
-        /*}*/
-
-        .left_btn, .right_btn {
-            font-size: 40px;
-            color: #c0c0c0;
-            position: absolute;
-            cursor:pointer;
-        }
-        .left_btn{
-            left:-60px;
-            top:130px;
-        }
-        .right_btn{
-            right:-60px;
-            top:130px;
-        }
-        .left_btn:hover, .right_btn:hover {
-            color: #fff;
-        }
-        .item_ul {
-            width: 1120px;
-            height: 330px;
-        }
-
-        .item_ul li {
-            width: 280px;
-            list-style-type: none;
-            float: left;
-            cursor: pointer;
-        }
-
-        .item_ul li img {
-            width: 280px;
-            height: 280px;
-        }
-
-        .item_ul li i {
-            width: 280px;
-            height: 90px;
-            display: block;
-            background: rgba(0, 0, 0, 0.8);
-            overflow: hidden;
-        }
-        .item_ul li i span{
-            display: block;
-            width: 280px;
-            height:30px;
-            font-style: normal;
-            text-align: center;
-            line-height: 30px;
-            margin-top:5px;
-            color: #fff;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .item_ul li i:hover{
-            background: #31c27c;
-        }
-        .newSong_nav{
-            top: 390px;
-        }
-    </style>
+    <style></style>
     <link rel="stylesheet" href="./style/head.css">
+    <link rel="stylesheet" href="./style/foot.css">
+    <link rel="stylesheet" href="./style/index_content.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -104,228 +19,295 @@
     <script src="../node_modules/browser.min.js"></script>
     <script type="text/babel" src="./src/head.js"></script>
     <script type="text/babel" src="./src/foot.js"></script>
+    <script type="text/javascript" src="./src/js/index_broadcast.js"></script>
 </head>
 <body>
 
 <div id="app">
     <div id="head"></div>
-    <div class="container-fluid">
-        <div class="span10">
-            <div class="row-fluid">
-                <h2 class="text-center" id="h2">
-                    新歌快递
-                </h2>
-            </div>
-            <div class="carousel slide" id="carousel-437523">
-                <ol class="carousel-indicators newSong_nav">
-                    <li data-slide-to="0" data-target="#carousel-437523">
-                    </li>
-                    <li data-slide-to="1" data-target="#carousel-437523">
-                    </li>
-                    <li data-slide-to="2" data-target="#carousel-437523" class="active">
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item ">
-                        <ul class="item_ul">
-                            <li>
-                                <img alt="" src="./images/1.png"/>
-                                <i>
-                                    <span class="album">独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/2.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/3.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/4.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <ul class="item_ul">
-                            <li>
-                                <img alt="" src="./images/1.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/2.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/3.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/4.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item active">
-                        <ul class="item_ul">
-                            <li>
-                                <img alt="" src="./images/1.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/2.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/3.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                            <li>
-                                <img alt="" src="./images/4.png"/>
-                                <i>
-                                    <span>独闯码头</span>
-                                    <span>杨帅</span>
-                                </i>
-                            </li>
-                        </ul>
 
-                    </div>
-                </div>
-                <span data-slide="prev" href="#carousel-437523" class="left_btn"> < </span>
-                <span data-slide="next" href="#carousel-437523" class="right_btn"> > </span>
-            </div>
+    <div class="container-fluid">
+        <div class="row-fluid content1">
+            <h1 class="text-center" id="h2">
+                新歌快递
+            </h1>
         </div>
-        <div class="span1">
+        <div class="carousel slide" id="carousel-437523">
+            <ol class="carousel-indicators newSong_nav">
+                <li data-slide-to="0" data-target="#carousel-437523">
+                </li>
+                <li data-slide-to="1" data-target="#carousel-437523">
+                </li>
+                <li data-slide-to="2" data-target="#carousel-437523" class="active">
+                </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item ">
+                    <ul class="item_ul">
+                        <li>
+                            <i class="songs_img">
+                               <img  alt="" src="./images/1.png" />
+                            </i>
+
+                            <i>
+                                <span class="album">独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/2.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/3.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/4.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul class="item_ul">
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/1.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/2.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/3.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/4.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item active">
+                    <ul class="item_ul">
+                        <li>
+                            <i class="songs_img">
+                                <img alt="" src="./images/1.png"/>
+                            </i>
+
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/2.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/3.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/4.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <span data-slide="prev" href="#carousel-437523" class="left_btn"> < </span>
+            <span data-slide="next" href="#carousel-437523" class="right_btn"> > </span>
         </div>
     </div>
-    <div class="row-fluid">
-        <div class="span1">
-        </div>
-        <div class="span10">
-            <div class="row-fluid">
-                <div class="span12">
-                    <h3 class="text-center">
-                        h3. 这是一套可视化布局系统.
-                    </h3>
-                </div>
+
+
+
+
+
+    <div class="rank_list">
+        <div class="rank_list_content">
+            <div class="row-fluid content2">
+                <h1 class="text-center">
+                    排行榜
+                </h1>
+                <i class="index_line index_line_left"></i>
+                <i class="index_line index_line_right"></i>
             </div>
-            <ul class="thumbnails">
-                <li class="span4">
-                    <div class="thumbnail">
-                        <img alt="300x200" src="img/people.jpg"/>
-                        <div class="caption">
-                            <h3>
-                                冯诺尔曼结构
-                            </h3>
-                            <p>
-                                也称普林斯顿结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置。
-                            </p>
-                            <p>
-                                <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="span4">
-                    <div class="thumbnail">
-                        <img alt="300x200" src="img/city.jpg"/>
-                        <div class="caption">
-                            <h3>
-                                哈佛结构
-                            </h3>
-                            <p>
-                                哈佛结构是一种将程序指令存储和数据存储分开的存储器结构，它的主要特点是将程序和数据存储在不同的存储空间中，进行独立编址。
-                            </p>
-                            <p>
-                                <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="span4">
-                    <div class="thumbnail">
-                        <img alt="300x200" src="img/sports.jpg"/>
-                        <div class="caption">
-                            <h3>
-                                改进型哈佛结构
-                            </h3>
-                            <p>
-                                改进型的哈佛结构具有一条独立的地址总线和一条独立的数据总线，两条总线由程序存储器和数据存储器分时复用，使结构更紧凑。
-                            </p>
-                            <p>
-                                <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="span4">
-                    <div class="thumbnail">
-                        <img alt="300x200" src="img/sports.jpg"/>
-                        <div class="caption">
-                            <h3>
-                                改进型哈佛结构
-                            </h3>
-                            <p>
-                                改进型的哈佛结构具有一条独立的地址总线和一条独立的数据总线，两条总线由程序存储器和数据存储器分时复用，使结构更紧凑。
-                            </p>
-                            <p>
-                                <a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="span1">
+            <div class="rank_list_div">
+                <ul class="rank_list_ul">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row-fluid content1">
+            <h1 class="text-center" id="h2">
+                新歌快递
+            </h1>
+        </div>
+        <div class="carousel slide" id="carousel-437523">
+            <ol class="carousel-indicators newSong_nav">
+                <li data-slide-to="0" data-target="#carousel-437523">
+                </li>
+                <li data-slide-to="1" data-target="#carousel-437523">
+                </li>
+                <li data-slide-to="2" data-target="#carousel-437523" class="active">
+                </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item ">
+                    <ul class="item_ul">
+                        <li>
+                            <i class="songs_img">
+                                <img  alt="" src="./images/1.png" />
+                            </i>
+
+                            <i>
+                                <span class="album">独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/2.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/3.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/4.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul class="item_ul">
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/1.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/2.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/3.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/4.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item active">
+                    <ul class="item_ul">
+                        <li>
+                            <i class="songs_img">
+                                <img alt="" src="./images/1.png"/>
+                            </i>
+
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/2.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/3.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="songs_img"><img alt="" src="./images/4.png"/></i>
+                            <i>
+                                <span>独闯码头</span>
+                                <span>杨帅</span>
+                            </i>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <span data-slide="prev" href="#carousel-437523" class="left_btn"> < </span>
+            <span data-slide="next" href="#carousel-437523" class="right_btn"> > </span>
+        </div>
+    </div>
+
+
+
     <div id="Foot"></div>
 </div>
-<button id="btn">11111111111111111</button>
 <script type="text/javascript">
-    window.onload = function () {
-        function click() {
-            var Btn = document.getElementById("btn");
-            Btn.onclick = function () {
-                window.location.href = "https://www.baidu.com";
-            }
-        }
 
-        click();
-    }
 </script>
 </body>
 </html>

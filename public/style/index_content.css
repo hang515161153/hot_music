@@ -1,0 +1,150 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/***************************首页的新歌快递模块******************************/
+.container-fluid {
+    height: 600px;
+    background: #555;
+}
+.content1 {
+    color: #fff;
+    margin-top: 50px;
+
+}
+.carousel {
+    width: 1120px;
+    margin: auto;
+}
+
+.carousel-inner {
+    margin-top: 30px;
+}
+
+.left_btn, .right_btn {
+    font-size: 40px;
+    color: #c0c0c0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.left_btn {
+    left: -60px;
+    top: 130px;
+}
+
+.right_btn {
+    right: -60px;
+    top: 130px;
+}
+
+.left_btn:hover, .right_btn:hover {
+    color: #fff;
+}
+
+.item_ul {
+    width: 1120px;
+    height: 330px;
+}
+
+.item_ul li {
+    width: 280px;
+    list-style-type: none;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.item_ul li .songs_img,.item_ul li .songs_img img{
+    width: 280px;
+    height: 280px;
+}
+.item_ul li .songs_img{
+    position: relative;
+}
+.item_ul li .songs_img img{
+    position: absolute;
+
+}
+.item_ul li i {
+    width: 280px;
+    height: 90px;
+    display: block;
+    background: rgba(0,0,0, 0.6);
+    overflow: hidden;
+}
+
+.item_ul li i span {
+    display: block;
+    width: 280px;
+    height: 30px;
+    font-style: normal;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item_ul li i:hover {
+    background: #31c27c;
+}
+.play{
+    position: absolute;
+    left:110px;
+    top:110px;
+    display: none;
+
+}
+.newSong_nav {
+    top: 390px;
+}
+/****************************首页的排行榜模块**********************************/
+.rank_list{
+    height:680px;
+    background:#555;
+    overflow: hidden;
+    border-top:1px solid #fff;
+}
+.rank_list_content{
+    width:1200px;
+    margin: auto;
+}
+.content2{
+    width: 350px;
+    height:50px;
+    color: #fff;
+    margin:40px auto 0;position: relative;
+}
+.index_line {
+    position: absolute;
+    top: 20px;
+    width: 72px;
+    height: 1px;
+    opacity: .1;
+    filter: alpha(opacity=10);
+    background: #fff;
+}
+.index_line_left{
+    left:0;
+}
+.index_line_right{
+    right: 0;
+}
+.rank_list_div,.rank_list_div ul{
+    width: 1200px;
+    background: red;
+}
+.rank_list_div ul li{
+    list-style-type: none;
+    width: 25%;
+    height:480px;
+    float: left;
+    background: black;
+    cursor: pointer;
+}
+.rank_list_div ul li:hover{
+    background: red;
+}

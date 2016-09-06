@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery鼠标悬停图片由中心点逐渐放大效果</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+.lanrenzhijia{ width:250px; height:321px; margin:100px auto; position:relative;}
+.lanrenzhijia img{ position:absolute; left:0; top:0; cursor:pointer;}
+</style>
+</head>
+<body>
+
+<div class="lanrenzhijia"><img src="images/lanren.png" class="pic" /></div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	$w = $('.pic').width();
+	$h = $('.pic').height();
+	$w2 = $w + 20;
+	$h2 = $h + 20;
+
+	$('.pic').hover(function(){
+		 $(this).stop().animate({height:$h2,width:$w2,left:"-10px",top:"-10px"},500);
+	},function(){
+		 $(this).stop().animate({height:$h,width:$w,left:"0px",top:"0px"},500);
+	});
+});
+</script>
+</body>
+</html>
